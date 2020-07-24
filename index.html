@@ -1,0 +1,59 @@
+<div class="question1" style="background-color: red; height: 700px; width: 800px; margin-left: 500px;">
+	<img src="1.jpg" style="width: 800px">
+	<h1>Вопрос 1</h1>
+	<div class="variant1" style="width: 800px; height: 100px; background-color: #8356b8; font-size: 40px">
+		Ответ 1
+	</div>
+	<div class="variant2" style="width: 800px; height: 100px; background-color: #78f0a4;font-size: 40px">
+		Ответ 2
+	</div>
+	<div class="variant3" style="width: 800px; height: 100px; background-color: #66b0b3;font-size: 40px">
+		Ответ 3
+	</div>
+</div>
+
+<div class="question2" style="background-color: blue; height: 700px; width: 800px; margin-left: 500px; display: none">
+	<img src="2.png" style="width: 800px; height: 200px">
+	<h1>Вопрос 2</h1>
+	<div class="variant1" style="width: 800px; height: 150px; background-color: #8356b8; font-size: 40px">
+		<iframe frameborder="0" style="border:none;width:100%;height:100px;" width="100%" height="100" src="https://music.yandex.ru/iframe/#track/68413482/11339511">Слушайте <a href='https://music.yandex.ru/album/11339511/track/68413482'>Катацумури</a> — <a href='https://music.yandex.ru/artist/160970'>Noize MC</a> на Яндекс.Музыке</iframe>
+	</div>
+	<div class="variant2" style="width: 800px; height: 150px; background-color: red;font-size: 40px">
+		<iframe frameborder="0" style="border:none;width:100%;height:100px;" width="100%" height="100" src="https://music.yandex.ru/iframe/#track/68413482/11339511">Слушайте <a href='https://music.yandex.ru/album/11339511/track/68413482'>Катацумури</a> — <a href='https://music.yandex.ru/artist/160970'>Noize MC</a> на Яндекс.Музыке</iframe>
+	</div>
+	<div class="variant3" style="width: 800px; height: 150px; background-color: green;font-size: 40px">
+		<iframe frameborder="0" style="border:none;width:100%;height:100px;" width="100%" height="100" src="https://music.yandex.ru/iframe/#track/60292250/10327453">Слушайте</iframe>
+	</div>
+</div>
+
+<div class="question3" style="background-color: green; height: 900px; width: 800px; margin-left: 500px; display: none">
+	<img src="3.jpg" style="width: 800px; height: 300px">
+	<h1>Вопрос 3</h1>
+	<div class="variant1" style="width: 800px; height: 200px; background-color: #8356b8; font-size: 40px">
+		<iframe width="560" height="200" src="https://www.youtube.com/embed/ai3o0XtrnM8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="variant2" style="width: 800px; height: 200px; background-color: red;font-size: 40px">
+		<iframe width="560" height="200" src="https://www.youtube.com/embed/9FCRaSwU3W8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="variant3" style="width: 800px; height: 200px; background-color: green;font-size: 40px">
+		<iframe width="560" height="200" src="https://www.youtube.com/embed/q4GdJVvdxss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+</div>
+
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+
+<script type="text/javascript">
+		find("question1 variant1").click("show","question2", "Правильно!");
+		find("question1 variant2").click("alert","неправильно");
+		find("question1 variant3").click("alert","это фамилия Венди");
+
+		find("question2 variant1").click("alert","неправильно");
+		find("question2 variant2").click("show","question3", "Правильно!");
+		find("question2 variant3").click("alert","неправильно");
+
+		find("question3 variant1").click("alert","неправильно");
+		find("question3 variant2").click("alert","неправильно");
+		find("question3 variant3").click("show","question1", "Правильно!");
+</script>
+
+
