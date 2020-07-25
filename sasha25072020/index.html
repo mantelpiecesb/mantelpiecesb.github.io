@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Викторина</title>
+</head>
+<body>
+	<style>
+		.otvet1 {
+			text-align: center;
+			background-color: deepskyblue;
+			border: 1px solid black;
+			font-size: 32px;
+			padding: 20px;
+		}
+		.otvet2 {
+			text-align: center;
+			background-color: deepskyblue;
+			border: 1px solid black;
+			font-size: 32px;
+			padding: 20px;
+		}
+		.otvet3 {
+			text-align: center;
+			background-color: deepskyblue;
+			border: 1px solid black;
+			font-size: 32px;
+			padding: 20px;
+		}
+	</style>
+	<div class="question1" style="width: 700px; height: 750px; margin-left: 600px">
+		<h1>
+			Какого персонажа нет в мультике?
+		</h1>
+		<img src="1.jpeg" width="700px" height="450px">
+		<div class="otvet1">
+			Иккинг
+		</div>
+		<div class="otvet2">
+			Рыбьеног
+		</div>
+		<div class="otvet3">
+			Логан
+		</div>
+	</div>
+	<div class="question2" style="width: 700px; height: 750px; margin-left: 600px; display: none;">
+		<h1>
+			Какое оружине у Иккинга?
+		</h1>
+		<img src="2.jpg" width="700px" height="450px">
+		<div class="otvet1">
+			Огненный кинжал
+		</div>
+		<div class="otvet2">
+			Меч
+		</div>
+		<div class="otvet3">
+			Булава
+		</div>
+	</div>
+	<div class="question3" style="width: 700px; height: 750px; margin-left: 600px; display: none;">
+		<h1>
+			Какого класса Беззубик?
+		</h1>
+		<img src="3.jpg" width="700px" height="450px">
+		<div class="otvet1">
+			Разящие
+		</div>
+		<div class="otvet2">
+			Загадочные
+		</div>
+		<div class="otvet3">
+			Камнееды
+		</div>
+	</div>
+	<div class="question4" style="width: 700px; height: 750px; display: none;">
+		<h1>
+			Кого встретил Беззубик?
+		</h1>
+		<iframe width="700" height="450" src="https://www.youtube.com/embed/PZVUOSeqSnc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="otvet1">
+			Дневную Фурию
+		</div>
+		<div class="otvet2">
+			Костолома
+		</div>
+		<div class="otvet3">
+			Грозокрыла
+		</div>
+	</div>
+<div class="You finished" style="width: 700px; height: 750px; background-color: orange; display: none; margin-left: 600px;">
+	Ты прошёл
+</div>
+</body>
+</html>
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<script type="text/javascript">
+	find("question1 otvet1").click("alert", "неправильно");
+      find("question1 otvet2").click("show", "question2", "правильно");
+      find("question1 otvet3").click("alert", "неправильно");
+      find("question2 otvet1").click("alert", "неправильно");
+      find("question2 otvet2").click("show", "question3", "правильно");
+      find("question2 otvet3").click("alert", "неправильно");
+      find("question3 otvet1").click("show", "question4", "правильно");
+      find("question3 otvet2").click("alert", "неправильно");
+      find("question3 otvet3").click("alert", "неправильно");
+      find("question4 otvet1").click("show", "You finished", "правильно");
+      find("question4 otvet2").click("alert", "неправильно");
+      find("question4 otvet3").click("alert", "неправильно");
+</script>

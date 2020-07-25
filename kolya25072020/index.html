@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Викторина</title>
+</head>
+<body>
+	<style>
+		.otvet1 {
+			text-align: center;
+			background-color: deepskyblue;
+			border: 1px solid black;
+			font-size: 32px;
+			padding: 20px;
+		}
+		.otvet2 {
+			text-align: center;
+			background-color: deepskyblue;
+			border: 1px solid black;
+			font-size: 32px;
+			padding: 20px;
+		}
+		.otvet3 {
+			text-align: center;
+			background-color: deepskyblue;
+			border: 1px solid black;
+			font-size: 32px;
+			padding: 20px;
+		}
+	</style>
+	<div class="vopros1" style="width: 700px; height: 750px; margin-left: 600px">
+		<h1>
+			Какого персонажа нет в мультике?
+		</h1>
+		<img src="1.jpeg" width="700px" height="450px">
+		<div class="otvet1">
+			Иккинг
+		</div>
+		<div class="otvet2">
+			Рыбьеног
+		</div>
+		<div class="otvet3">
+			Логан
+		</div>
+	</div>
+	<div class="vopros2" style="width: 700px; height: 750px; margin-left: 600px; display:none">
+		<h1>
+			Какое оружине у Иккинга?
+		</h1>
+		<img src="7.png" width="700px" height="450px">
+		<div class="otvet1">
+			Огненный кинжал
+		</div>
+		<div class="otvet2">
+			Меч
+		</div>
+		<div class="otvet3">
+			Булава
+		</div>
+	</div>
+	<div class="vopros3" style="width: 700px; height: 750px; margin-left: 600px; display:none">
+		<h1>
+			Какого класса Беззубик?
+		</h1>
+		<img src="3.jpg" width="700px" height="450px">
+		<div class="otvet1">
+			Разящие
+		</div>
+		<div class="otvet2">
+			Загадочные
+		</div>
+		<div class="otvet3">
+			Камнееды
+		</div>
+	</div>
+	<div class="vopros4" style="width: 700px; height: 750px; display: none; margin-left: 600px">
+		<h1>
+			Кого встретил Беззубик?
+		</h1>
+		<iframe width="700" height="450" src="https://www.youtube.com/embed/mXG7bR4KN8Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="otvet1">
+			Костолома
+		</div>
+		<div class="otvet2">
+			Грозокрыла
+		</div>
+		<div class="otvet3">
+			Дневную фурию
+		</div>
+	</div>
+	<div class="vopros5" style="width: 700px; height: 750px; display: none; margin-left: 600px">
+		<h1>
+			Какой дракон у Сморкалы?
+		</h1>
+		<img src="4.jpg" width="700px" height="450px">
+		<div class="otvet1">
+			Кривоклык
+		</div>
+		<div class="otvet2">
+			Огнеед
+		</div>
+		<div class="otvet3">
+			Громобой
+		</div>
+	</div>
+	<div class="vopros6" style="width: 700px; height: 750px; display: none; margin-left: 600px">
+		<h1>
+			Каких типов драконов не существует?
+		</h1>
+		<img src="5.jpg" width="700" height="450">
+		<div class="otvet1">
+			Разящие, Когтевики, Водные
+		</div>
+		<div class="otvet2">
+			Магические, Секретные, Земляные
+		</div>
+		<div class="otvet3">
+			Ищейки, Кочегары, Загадочные
+		</div>
+	</div>
+	<div class="vopros7" style="width: 700px; height: 750px; display: none; margin-left: 600px">
+		<h1>
+			Каких тип драконов изображен?
+		</h1>
+		<img src="6.png" width="700" height="450">
+		<div class="otvet1">
+			Загадочные
+		</div>
+		<div class="otvet2">
+			Разящие
+		</div>
+		<div class="otvet3">
+			Водные
+		</div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+
+<script type="text/javascript">
+	find("vopros1 otvet1").click("alert", "Неправильно");
+	find("vopros1 otvet2").click("alert", "Неправильно");
+	find("vopros1 otvet3").click("show", "vopros2", "Правильно!");
+
+	find("vopros2 otvet1").click("show", "vopros3", "Правильно!");
+	find("vopros2 otvet2").click("show", "vopros1", "Неправильно");
+	find("vopros2 otvet3").click("show", "vopros1", "Неправильно");
+
+	find("vopros3 otvet1").click("show", "vopros4", "Правильно!")
+	find("vopros3 otvet2").click("show", "vopros1", "Неправильно")
+	find("vopros3 otvet3").click("show", "vopros1", "Неправильно")
+
+	find("vopros4 otvet1").click("show", "vopros1", "Неправильно");
+	find("vopros4 otvet2").click("show", "vopros1", "Неправильно");
+	find("vopros4 otvet3").click("show", "vopros5", "Правильно!");
+
+	find("vopros5 otvet3").click("show", "vopros1", "Неправильно");
+	find("vopros5 otvet2").click("show", "vopros1", "Неправильно");
+	find("vopros5 otvet1").click("show", "vopros6", "Правильно!");
+
+	find("vopros6 otvet3").click("show", "vopros1", "Неправильно");
+	find("vopros6 otvet1").click("show", "vopros1", "Неправильно");
+	find("vopros6 otvet2").click("show", "vopros7", "Правильно!");
+
+	find("vopros7 otvet3").click("show", "vopros1", "Неправильно");
+	find("vopros7 otvet2").click("show", "vopros1", "Неправильно");
+	find("vopros7 otvet1").click("alert", "Правильно! Ты победил!");
+</script>
